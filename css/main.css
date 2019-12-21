@@ -105,9 +105,7 @@ span.text-span {
 div.next-link {
   padding-top: 20px;
   position: relative;
-  /* firefox */
   -moz-animation: bounce 1s infinite linear;
-  /* chrome */
   -webkit-animation: bounce 1s infinite linear;
   -o-animation: bounce 1s infinite linear;
   animation: bounce 1s infinite linear;
@@ -201,10 +199,10 @@ div.section-header {
 div.section-content {
   padding-top: 40px;
   overflow-x: auto;
+  text-align: center;
 }
 table.table-content {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 article.img-article {
   width: 450px;
@@ -219,6 +217,7 @@ article.img-article figure {
   text-align: center;
 }
 div.div-string {
+  text-align: left;
   padding-top: 10px;
 }
 div.div-string strong {
@@ -248,7 +247,7 @@ div.form-header {
 form.form-content {
   text-align: center;
 }
-div.div-form {
+div.div-box {
   display: inline-block;
 }
 
@@ -293,4 +292,43 @@ input.input-submit {
 img.icon {
   width: 30px;
   height: 30px;
+}
+
+/* media query */
+@media screen and (max-width: 1250px) {
+  div.nav-ul-content {
+    background: none;
+  }
+}
+@media screen and (max-width: 920px) {
+  ul.nav-ul li {
+    padding: 0px 30px;
+  }
+  img#main-link {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 680px) {
+  ul.nav-ul li {
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  img#main-link, img.img-down {
+    display: none;
+  }
+}
+@media screen and (max-width: 520px) {
+  figure.logo-img, div.intro-content {
+    display: none;
+  }
+  ul.nav-ul li {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav#navigation {
+    display: none;
+  }
 }
