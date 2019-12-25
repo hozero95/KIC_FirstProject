@@ -1,4 +1,6 @@
+/* Font import */
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap&subset=korean');
 
 /* Initial */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, center, ul, li, table, tr, th, td, article, figure, footer, header, nav, section, video {
@@ -10,6 +12,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, center, ul, li, table,
   vertical-align: baseline;
   color: white;
   font-family: 'Do Hyeon', sans-serif;
+  /* font-family: 'Noto Serif KR', serif; */
 }
 html {
   scroll-behavior: smooth;
@@ -76,14 +79,26 @@ div.top_button {
   bottom: 5px;
   right: 5px;
 }
+a.page-link {
+  padding: 5px;
+}
+a.page-link:hover {
+  color: yellow;
+  font-weight: bolder;
+}
+
 
 /* Header */
-video#intro-video {
+header#header {
+  border-bottom: 3px dotted white;
+}
+video#introVd {
   position: relative;
   z-index: -99;
   left: 0px;
   top: 0px;
   width: 100%;
+  height: auto;
 }
 div.intro-content {
   position: absolute;
@@ -96,8 +111,8 @@ div.intro-content {
   color: white;
 }
 span.text-span {
-  border-right: 1px solid white;
-  border-left: 1px solid white;
+  border-right: 3px solid white;
+  border-left: 3px solid white;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 30px;
@@ -181,8 +196,6 @@ div.next-link {
   }
 }
 
-/* Content */
-
 /* Section 1, Section 2 */
 article.section-article {
   background-image: url(../images/main.jpg);
@@ -198,7 +211,6 @@ div.section-header {
 }
 div.section-content {
   padding-top: 40px;
-  overflow-x: auto;
   text-align: center;
 }
 table.table-content {
@@ -212,6 +224,9 @@ article.img-article {
 td.td-border {
   border: 1px solid white;
   border-radius: 4px;
+}
+td.td-border:hover {
+  box-shadow: 0px 0px 10px 5px white;
 }
 article.img-article figure {
   text-align: center;
@@ -240,6 +255,48 @@ img.img-down {
 }
 
 /* Section 3 */
+div.div-span, div.back-span {
+  margin: 50px;
+}
+span.span-price {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 20px;
+}
+span.span-price:hover, span.span-back:hover {
+  background: white;
+  color: black;
+}
+article.gallery-article {
+  display: block;
+  text-align: center;
+}
+article.gallery-article:hover {
+  text-decoration: underline;
+}
+img.gallery-img {
+  display: block;
+  border-radius: 4px;
+  width: 450px;
+  height: auto;
+  vertical-align: bottom;
+}
+div.span-string {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  font-size: 20px;
+  background: black;
+}
+span.span-back {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+/* Section 4 */
 div.form-header {
   padding-top: 80px;
   text-align: center;
@@ -295,12 +352,12 @@ img.icon {
 }
 
 /* media query */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1500px) {
   div.nav-ul-content {
     background: none;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1190px) {
   ul.nav-ul li {
     padding: 0px 30px;
   }
@@ -309,26 +366,26 @@ img.icon {
     height: 50px;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 890px) {
   ul.nav-ul li {
     padding: 0px 10px;
   }
 }
-@media screen and (max-width: 600px) {
-  img#main-link, img.img-down {
-    display: none;
-  }
-}
-@media screen and (max-width: 520px) {
-  figure.logo-img, div.intro-content {
+@media screen and (max-width: 690px) {
+  img#main-link, img.img-down, figure.logo-img {
     display: none;
   }
   ul.nav-ul li {
     padding-left: 20px;
   }
 }
-@media screen and (max-width: 400px) {
-  nav#navigation {
+@media screen and (max-width: 580px) {
+  ul.nav-ul li {
+    padding: 0px 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav#navigation, div.intro-content {
     display: none;
   }
 }
