@@ -1,6 +1,6 @@
 /* Font import */
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap&subset=korean');
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap&subset=korean'); */
 
 /* Initial */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, center, ul, li, table, tr, th, td, article, figure, footer, header, nav, section, video {
@@ -269,18 +269,15 @@ span.span-price:hover, span.span-back:hover {
   color: black;
 }
 article.gallery-article {
-  display: block;
   text-align: center;
 }
 article.gallery-article:hover {
   text-decoration: underline;
 }
 img.gallery-img {
-  display: block;
   border-radius: 4px;
   width: 450px;
   height: auto;
-  vertical-align: bottom;
 }
 div.span-string {
   padding-top: 10px;
