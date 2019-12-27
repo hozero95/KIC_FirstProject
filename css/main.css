@@ -92,23 +92,23 @@ a.page-link:hover { /* 메뉴 리스트에 hover 효과 */
 header#header {
   border-bottom: 3px dotted white; /* Header와 Section간의 경계선 추가 */
 }
-video#introVd { /* video를 background처럼 사용 */
+video#introVd {
   position: relative;
-  z-index: -99;
+  z-index: -99; /* video를 background처럼 사용 */
   left: 0px;
   top: 0px;
   width: 100%;
   height: auto;
 }
 div.intro-content {
-  position: absolute;
+  position: absolute; /* video 위에 content가 위치할 수 있도록 설정 */
   top: 90px;
   left: 30px;
   text-align: center;
   color: white;
 }
 span.text-span {
-  border-right: 3px solid white;
+  border-right: 3px solid white; /* 소제목 강조하기 위한 border 설정 */
   border-left: 3px solid white;
   padding-left: 20px;
   padding-right: 20px;
@@ -262,7 +262,7 @@ span.span-price {
   padding: 20px;
   font-size: 20px;
 }
-span.span-price:hover, span.span-back:hover {
+span.span-price:hover, span.span-back:hover { /* span태그를 hover속성을 이용하여 마치 버튼처럼 보이게끔 설정 */
   background: white;
   color: black;
 }
@@ -325,7 +325,7 @@ input, textarea {
   color: white;
   font-size: 20px;
   border-radius: 4px;
-  font-family: inherit;
+  font-family: inherit; /* input과 textarea의 폰트를 전체 폰트와 같게 설정 */
 }
 input.input-text {
   width: 400px;
@@ -334,7 +334,7 @@ input.input-text {
 textarea {
   width: 400px;
   height: 128px;
-  resize: none;
+  resize: none; /* textarea의 크기를 사용자가 변경 불가능 */
 }
 input.input-submit {
   width: 100px;
