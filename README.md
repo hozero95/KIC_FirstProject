@@ -2,6 +2,5 @@
 
 # 기능 구현
 
->사용 언어 : HTML, CSS, JavaScript
-
->사용 툴 : Atom
+  사용 언어 : HTML, CSS, JavaScript<br>
+  사용 툴 : Atom
